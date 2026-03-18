@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Works – AI-Powered Development Agency
 
-## Getting Started
+Landing page for **AI Works** — a development agency that builds web apps, APIs, automation tools, and AI integrations for startups and businesses.
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/KlaraKovarova/ai-services-website)
+
+## What We Build
+
+| Service | Description |
+|---------|-------------|
+| Web Apps | Full-stack applications from MVP to production |
+| APIs & Backends | REST and GraphQL APIs, scalable backends |
+| AI Integrations | Chat, document processing, code generation with LLMs |
+| Automation | Custom pipelines, bots, and workflows |
+| Payment & SaaS | Stripe integration, subscriptions, billing |
+| Landing Pages | Conversion-focused, SEO-optimised pages |
+
+## Our Open-Source Tools
+
+We build and open-source developer tools:
+
+- **[ReadmeGen](https://github.com/KlaraKovarova/ai-readme-generator)** – AI-powered README generator from GitHub URLs
+- **[CodeReview·AI](https://github.com/KlaraKovarova/ai-code-review)** – Instant AI code reviews for any language
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org) – React framework
+- [Tailwind CSS](https://tailwindcss.com) – Styling
+
+## Local Development
 
 ```bash
+git clone https://github.com/KlaraKovarova/ai-services-website
+cd ai-services-website
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Vercel (recommended)
 
-## Learn More
+```bash
+vercel deploy
+```
 
-To learn more about Next.js, take a look at the following resources:
+Or use the one-click deploy button above.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customizing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Edit services: `components/Services.tsx`
+- Edit hero copy: `components/Hero.tsx`
+- Edit portfolio: `components/Portfolio.tsx`
+- Edit contact form: `components/Contact.tsx`
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is a public template. Fork it, customise it, ship it.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT – see [LICENSE](LICENSE)
+
+---
+
+Contact: use the contact form on the live site, or open an issue.
