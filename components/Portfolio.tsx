@@ -1,10 +1,13 @@
+import React from "react";
+
 const cases = [
   {
     tag: "SaaS",
     title: "AI README Generator",
     description:
       "Paste a GitHub URL or upload a zip — get a polished README in seconds. Built with Next.js + Claude API.",
-    status: "In development",
+    status: "Live",
+    href: "https://readme-gen-sable.vercel.app",
   },
   {
     tag: "Automation",
@@ -12,6 +15,7 @@ const cases = [
     description:
       "Custom Slack bot that automates repetitive reporting tasks, saving a team 10+ hours per week.",
     status: "Coming soon",
+    href: null,
   },
   {
     tag: "Web App",
@@ -19,6 +23,7 @@ const cases = [
     description:
       "Full-stack client portal with auth, file uploads, invoicing, and real-time project status.",
     status: "Coming soon",
+    href: null,
   },
 ];
 
@@ -33,21 +38,41 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {cases.map((c) => (
-            <div
-              key={c.title}
-              className="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex flex-col gap-4"
-            >
-              <div className="flex items-center justify-between">
-                <span className="text-xs bg-indigo-950 border border-indigo-800 text-indigo-300 px-2.5 py-1 rounded-full">
-                  {c.tag}
-                </span>
-                <span className="text-xs text-gray-500">{c.status}</span>
-              </div>
-              <h3 className="text-base font-semibold text-white">{c.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{c.description}</p>
-            </div>
-          ))}
+          {cases.map((c) => {
+            const CardWrapper = c.href
+              ? ({ children }: { children: React.ReactNode }) => (
+                  <a
+                    href={c.href!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex flex-col gap-4 hover:border-indigo-700 transition-colors group"
+                  >
+                    {children}
+                  </a>
+                )
+              : ({ children }: { children: React.ReactNode }) => (
+                  <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex flex-col gap-4">
+                    {children}
+                  </div>
+                );
+            return (
+              <CardWrapper key={c.title}>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs bg-indigo-950 border border-indigo-800 text-indigo-300 px-2.5 py-1 rounded-full">
+                    {c.tag}
+                  </span>
+                  <span className={`text-xs ${c.status === "Live" ? "text-emerald-400" : "text-gray-500"}`}>
+                    {c.status}
+                  </span>
+                </div>
+                <h3 className="text-base font-semibold text-white group-only:text-white">{c.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{c.description}</p>
+                {c.href && (
+                  <span className="text-indigo-400 text-sm mt-auto">Try it →</span>
+                )}
+              </CardWrapper>
+            );
+          })}
         </div>
       </div>
     </section>
