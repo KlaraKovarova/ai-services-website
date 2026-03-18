@@ -10,18 +10,18 @@ const cases = [
     href: "https://readme-gen-sable.vercel.app",
   },
   {
+    tag: "SaaS",
+    title: "AI Code Review",
+    description:
+      "Paste any code snippet and get an instant AI-powered review covering bugs, security issues, performance, and style — with severity levels. BYOK + demo mode.",
+    status: "Live",
+    href: "https://code-review-topaz.vercel.app",
+  },
+  {
     tag: "Automation",
     title: "Workflow Automation Bot",
     description:
       "Custom Slack bot that automates repetitive reporting tasks, saving a team 10+ hours per week.",
-    status: "Coming soon",
-    href: null,
-  },
-  {
-    tag: "Web App",
-    title: "Client Portal",
-    description:
-      "Full-stack client portal with auth, file uploads, invoicing, and real-time project status.",
     status: "Coming soon",
     href: null,
   },
