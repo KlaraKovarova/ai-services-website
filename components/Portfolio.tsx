@@ -42,12 +42,20 @@ const cases = [
     href: "https://env-gen.vercel.app",
   },
   {
-    tag: "Automation",
-    title: "Workflow Automation Bot",
+    tag: "API",
+    title: "AI Code Tools API",
     description:
-      "Custom Slack bot that automates repetitive reporting tasks, saving a team 10+ hours per week.",
-    status: "Coming soon",
-    href: null,
+      "REST API for README generation, code review, and unit test generation. BYOK (bring your own Anthropic key). Available on RapidAPI — integrate in minutes.",
+    status: "Live",
+    href: "https://rapidapi-service.vercel.app",
+  },
+  {
+    tag: "Bot",
+    title: "AI Code Tools — Telegram Bot",
+    description:
+      "Telegram bot with /readme, /review, and /test commands. Free tier (10 req/day) + premium via Telegram Stars. No sign-up needed.",
+    status: "Live",
+    href: "https://github.com/KlaraKovarova/ai-telegram-bot",
   },
 ];
 
