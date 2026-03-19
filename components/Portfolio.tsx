@@ -26,6 +26,14 @@ const cases = [
     href: "https://unit-test-gen.vercel.app",
   },
   {
+    tag: "SaaS",
+    title: "CommitCraft·AI — Commit Message Generator",
+    description:
+      "Paste a diff or describe your changes and get a clear, conventional commit message instantly. BYOK + demo mode, no sign-up needed.",
+    status: "Live",
+    href: "https://commit-msg-gen.vercel.app",
+  },
+  {
     tag: "Automation",
     title: "Workflow Automation Bot",
     description:
