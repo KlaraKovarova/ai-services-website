@@ -34,6 +34,14 @@ const cases = [
     href: "https://commit-msg-gen.vercel.app",
   },
   {
+    tag: "SaaS",
+    title: "EnvGen·AI — .env File Generator",
+    description:
+      "Paste your package.json, docker-compose, or config files and get a complete .env.example with all variables, sensible defaults, and inline docs in seconds. BYOK + demo mode.",
+    status: "Live",
+    href: "https://env-gen.vercel.app",
+  },
+  {
     tag: "Automation",
     title: "Workflow Automation Bot",
     description:
