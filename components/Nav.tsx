@@ -7,6 +7,7 @@ export default function Nav() {
         </a>
         <div className="hidden sm:flex items-center gap-8 text-sm text-gray-400">
           <a href="#services" className="hover:text-white transition-colors">Services</a>
+          <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
           <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
           <a href="#contact" className="hover:text-white transition-colors">Contact</a>
         </div>

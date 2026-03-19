@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
+import Pricing from "@/components/Pricing";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import EmailSignup from "@/components/EmailSignup";
@@ -27,6 +28,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Services />
+      <Pricing />
       <Portfolio />
       <Contact />
       <EmailSignup />
