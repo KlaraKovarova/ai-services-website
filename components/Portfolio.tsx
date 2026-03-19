@@ -18,6 +18,14 @@ const cases = [
     href: "https://code-review-topaz.vercel.app",
   },
   {
+    tag: "SaaS",
+    title: "TestGen·AI — Unit Test Generator",
+    description:
+      "Paste any code and get complete unit tests in seconds — Jest, pytest, Go, and Rust supported. BYOK or try with demo mode, no sign-up needed.",
+    status: "Live",
+    href: "https://unit-test-gen.vercel.app",
+  },
+  {
     tag: "Automation",
     title: "Workflow Automation Bot",
     description:
@@ -37,7 +45,7 @@ export default function Portfolio() {
             Our portfolio is growing. Here&apos;s a preview of current and upcoming projects.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cases.map((c) => {
             const CardWrapper = c.href
               ? ({ children }: { children: React.ReactNode }) => (
