@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import EmailSignup from "@/components/EmailSignup";
+import CryptoBanner from "@/components/CryptoBanner";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function Home() {
       <Portfolio />
       <Contact />
       <EmailSignup />
+      <CryptoBanner />
       <Footer />
     </main>
   );
